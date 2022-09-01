@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    background-image: url("background.jpg");
+    background-image: url("backgroundimage.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -107,4 +107,26 @@ img {
     width: 8rem;
     text-align: right;
     background-color: rgb(85, 186, 85);
+}
+@media only screen and (max-width: 900px) {
+    #textbox {
+        margin: 0 auto;
+        width: fit-content;
+    }
+    #imagebox {
+        justify-content: center;
+    }
+    #navigation {
+        flex-shrink: 1;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    #imagebox {
+        justify-content: center;
+    }
+    #navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
